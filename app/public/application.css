@@ -5,6 +5,11 @@ body {
   font-family: serif;
 }
 
+form {
+  text-align: center;
+  font-family: serif;
+}
+
 div:"container" {
   text-decoration: none;
 }

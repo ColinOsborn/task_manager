@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>All Tasks</title>
-  </head>
-  <body>
+
     <h1>All Tasks</h1>
 
     <% @tasks.each do |task| %>
       <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-    <% end %>
+      <a href="/tasks/<%= task.id %>/edit">Edit</a>
 
-  </body>
-</html>
+      <form action="tasks/<%= task.id %>" method="post">
+        <input type="hidden" name="_method" value="DELETE"/>
+        <input type="submit" value="delete"/>
+      </form>
+    <% end %>

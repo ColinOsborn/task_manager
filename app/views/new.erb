@@ -7,8 +7,10 @@
   <body>
     <form action="/tasks" method="post">
       <p>Enter a new task:</p>
+      <label for="task-title">Task Title</label>
       <input type='text' name='task[title]'/><br/>
-      <textarea name='task[description]'>Details...</textarea><br/>
+      <label for="task-description">Description</label>
+      <textarea name='task[description]'></textarea><br/>
       <input type='submit'/>
     </form>
 
