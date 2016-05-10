@@ -1,15 +1,6 @@
 ---
 tasks:
 - id: 1
-  title: Get some salsa
-  description: Chips N Salsa
-- id: 2
-  title: Get some salsa
-  description: Chips n salsa
-- id: 3
-  title: Build this page
-  description: Get it functioning
-- id: 4
-  title: Take out the Trash
-  description: Take that shit outside!
-total: 4
+  title: Clean the TDI
+  description: Make sure to check the air intake
+total: 1
