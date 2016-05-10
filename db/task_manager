@@ -9,4 +9,7 @@ tasks:
 - id: 3
   title: Build this page
   description: Get it functioning
-total: 3
+- id: 4
+  title: Take out the Trash
+  description: Take that shit outside!
+total: 4

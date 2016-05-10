@@ -19,7 +19,6 @@ class TaskManagerApp < Sinatra::Base
   post '/tasks' do
     task_manager.create(params[:task])
     redirect '/tasks'
-    # "<p>Params: #{params}</p> <p>Task params: #{params[:task]}</p>"
   end
 
   get '/tasks/:id' do |id|
