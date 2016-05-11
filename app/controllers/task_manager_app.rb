@@ -44,6 +44,6 @@ class TaskManagerApp < Sinatra::Base
     else
       database = YAML::Store.new('db/task_manager')
     end
-  @task_manager ||= TaskManager.new(database)
+    @task_manager ||= TaskManager.new(database)
   end
 end
