@@ -7,6 +7,8 @@ class UserCanCreateANewTaskTest < FeatureTest
 
     click_link "New Task"
 
+    assert_equal '/tasks/new', current_path
+
     fill_in 'task[title]', with: "Learn Capybara"
     fill_in 'task[description]', with: "Capybara and Launchy fun-time"
 
