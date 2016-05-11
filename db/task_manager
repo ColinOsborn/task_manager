@@ -1,5 +1,6 @@
 ---
 tasks:
+<<<<<<< HEAD
 - id: 5
   title: Practice up that CSS
   description: " Read from textbooks and also tutorials"
@@ -7,3 +8,9 @@ tasks:
   title: Build Blog page
   description: Do that tonight
 total: 6
+=======
+- id: 7
+  title: Get this thing finally styled
+  description: Add that bootstrap
+total: 7
+>>>>>>> 9a0bd5c7893df7f147c7de21de86a53cf821d087
