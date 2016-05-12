@@ -1,4 +1,3 @@
-
 class TaskManager
   attr_reader :database
 
@@ -19,7 +18,7 @@ class TaskManager
   end
 
   def raw_task(id)
-    table.where(:id => id).to_a.first
+    locate_task(id).to_a.first
   end
 
   def find(id)
@@ -27,14 +26,18 @@ class TaskManager
   end
 
   def update(id, task)
-    table.where(:id => id).update(task)
+    locate_task(id).update(task)
   end
 
   def destroy(id)
-    table.where(:id => id).delete
+    locate_task(id).delete
   end
 
   def delete_all
     table.delete
+  end
+
+  def locate_task(id)
+    table.where(:id => id)
   end
 end
