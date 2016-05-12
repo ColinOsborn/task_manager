@@ -7,9 +7,10 @@ class UserSeesAllTasksTest < FeatureTest
     task_manager.create({title: "Title2", description: "Description2"})
 
     visit '/tasks'
-    
+
     assert page.has_content?("1")
     assert page.has_content?("Title1")
+    # assert_equal page.has_content("(#{task_1_id})")
   end
 
 end
